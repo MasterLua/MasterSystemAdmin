@@ -21,3 +21,10 @@ Commands :
 !mod add/remove @blabla
 
 !admintest
+
+
+
+
+
+
+DISCORD FOR HELP : https://discord.gg/8qMKDUA

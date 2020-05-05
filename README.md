@@ -28,6 +28,6 @@ IN SQL MODO TABLE =
 
 1 = MODERATOR
 
-2 = ALL PERMm
+2 = ALL PERM
 
 DISCORD FOR HELP : https://discord.gg/8qMKDUA

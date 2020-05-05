@@ -64,13 +64,15 @@ client.on('message', message => {
     })
     }
     if(command == "admintest") {
-      QueryDb("SELECT * FROM moderator WHERE DiscordID = '"+userid+"'", async function(result90){
-        if(result90[0] && (result90[0].modo == 1) ){
+      QueryDb("SELECT * FROM moderator WHERE DiscordID = '"+userid+"'", async function(result99){
+        if(result99[0] && (result99[0].modo == 1)){
           message.reply("you're a moderator")
           //your code if moderator
-        }else{
-          message.reply("you're not a moderator")
+        }else if(result99[0] && (result99[0].modo == 2)){
+          message.reply("YOU HAVE FUCKING ALL PERM")
           //your code if not moderator
+        }else{
+          message.reply("You just user")
         }
       })
     }

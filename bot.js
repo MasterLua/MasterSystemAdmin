@@ -53,7 +53,7 @@ client.on('message', message => {
         })
       }
       if(args[0] == "remove") {
-        QueryDb("DELETE FROM `moderator` WHERE '"+member+"'", async function(result4){
+        QueryDb("DELETE FROM moderator WHERE DiscordID = '"+member.id+"'", async function(result4){
         message.channel.send("I deleted the moderator: <@" + member + ">")
         })
       }
